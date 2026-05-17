@@ -6,7 +6,8 @@ import streamlit as st
 import httpx
 import os
 
-API_BASE = os.getenv("API_BASE_URL", "http://localhost:8000")
+#API_BASE = os.getenv("API_BASE_URL", "http://localhost:8000")
+API_BASE = "https://jobpilot-ai-9db8.onrender.com"
 
 # ─── Page config ──────────────────────────────────────────────────────────────
 st.set_page_config(
