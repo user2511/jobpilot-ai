@@ -7,9 +7,9 @@ import json
 import httpx
 from tenacity import retry, stop_after_attempt, wait_exponential, retry_if_exception_type
 
-from config import settings
-from utils.logger import get_logger
-from utils.redis_cache import get_cache, set_cache
+from backend.config import settings
+from backend.utils.logger import get_logger
+from backend.utils.redis_cache import get_cache, set_cache
 
 logger = get_logger(__name__)
 

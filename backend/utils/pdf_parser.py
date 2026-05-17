@@ -2,7 +2,7 @@
 # Extracts raw text from PDF bytes using PyMuPDF (fitz).
 
 import fitz  # PyMuPDF
-from utils.logger import get_logger
+from backend.utils.logger import get_logger
 
 logger = get_logger(__name__)
 

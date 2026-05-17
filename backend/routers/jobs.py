@@ -5,15 +5,15 @@ from fastapi import APIRouter, HTTPException, Depends
 from sqlalchemy.orm import Session
 
 from backend.database import get_db
-from schemas.job import JDInput
-from schemas.outputs import AnalysisResponse, FullOutput
-from schemas.resume import ResumeMetadata, ExperienceItem, EducationItem
-from models.db_models import ResumeSession, JobAnalysis
-from services.jd_extractor import extract_jd
-from services.matcher import compute_match
-from services.optimizer import optimize_resume
-from services.generator import generate_cover_letter, generate_recruiter_outreach
-from utils.logger import get_logger
+from backend.schemas.job import JDInput
+from backend.schemas.outputs import AnalysisResponse, FullOutput
+from backend.schemas.resume import ResumeMetadata, ExperienceItem, EducationItem
+from backend.models.db_models import ResumeSession, JobAnalysis
+from backend.services.jd_extractor import extract_jd
+from backend.services.matcher import compute_match
+from backend.services.optimizer import optimize_resume
+from backend.services.generator import generate_cover_letter, generate_recruiter_outreach
+from backend.utils.logger import get_logger
 
 logger = get_logger(__name__)
 router = APIRouter()

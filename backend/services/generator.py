@@ -1,13 +1,13 @@
 # backend/services/generator.py
 # Generates cover letter and recruiter outreach message.
 
-from utils.logger import get_logger
-from services.llm_client import call_llm_structured
-from prompts.cover_letter import COVER_LETTER_PROMPT
-from prompts.outreach import OUTREACH_PROMPT
-from schemas.resume import ResumeMetadata
-from schemas.job import JDExtracted
-from schemas.outputs import CoverLetter, RecruiterOutreach
+from backend.utils.logger import get_logger
+from backend.services.llm_client import call_llm_structured
+from backend.prompts.cover_letter import COVER_LETTER_PROMPT
+from backend.prompts.outreach import OUTREACH_PROMPT
+from backend.schemas.resume import ResumeMetadata
+from backend.schemas.job import JDExtracted
+from backend.schemas.outputs import CoverLetter, RecruiterOutreach
 
 logger = get_logger(__name__)
 

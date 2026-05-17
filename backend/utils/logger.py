@@ -3,7 +3,7 @@
 
 import logging
 import sys
-from config import settings
+from backend.config import settings
 
 
 def get_logger(name: str) -> logging.Logger:

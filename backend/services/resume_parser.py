@@ -4,12 +4,12 @@
 import uuid
 import hashlib
 
-from utils.pdf_parser import extract_text_from_pdf
-from utils.redis_cache import get_cache, set_cache
-from utils.logger import get_logger
-from services.llm_client import call_llm_structured
-from prompts.resume_structure import RESUME_STRUCTURE_PROMPT
-from schemas.resume import ResumeMetadata, ExperienceItem, EducationItem
+from backend.utils.pdf_parser import extract_text_from_pdf
+from backend.utils.redis_cache import get_cache, set_cache
+from backend.utils.logger import get_logger
+from backend.services.llm_client import call_llm_structured
+from backend.prompts.resume_structure import RESUME_STRUCTURE_PROMPT
+from backend.schemas.resume import ResumeMetadata, ExperienceItem, EducationItem
 
 logger = get_logger(__name__)
 

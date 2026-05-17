@@ -6,10 +6,10 @@ from fastapi.middleware.cors import CORSMiddleware
 from contextlib import asynccontextmanager
 
 from backend.database import engine, Base
-from routers import resume, jobs, outputs
-from utils.logger import get_logger
-from utils.redis_cache import check_redis_health
-from config import settings
+from backend.routers import resume, jobs, outputs
+from backend.utils.logger import get_logger
+from backend.utils.redis_cache import check_redis_health
+from backend.config import settings
 
 logger = get_logger(__name__)
 

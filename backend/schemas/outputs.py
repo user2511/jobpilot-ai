@@ -2,7 +2,7 @@
 
 from pydantic import BaseModel
 from typing import List
-from schemas.job import MatchResult
+from backend.schemas.job import MatchResult
 
 
 class OptimizedBullets(BaseModel):

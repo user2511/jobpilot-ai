@@ -2,10 +2,10 @@
 # Computes fit score between resume and JD.
 # Rule-based scoring first (fast, free), LLM for qualitative analysis.
 
-from utils.logger import get_logger
-from services.llm_client import call_llm_structured
-from prompts.matcher import MATCH_PROMPT
-from schemas.job import MatchResult, JDExtracted
+from backend.utils.logger import get_logger
+from backend.services.llm_client import call_llm_structured
+from backend.prompts.matcher import MATCH_PROMPT
+from backend.schemas.job import MatchResult, JDExtracted
 
 logger = get_logger(__name__)
 

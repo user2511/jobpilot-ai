@@ -4,12 +4,12 @@
 
 import hashlib
 
-from utils.redis_cache import get_cache, set_cache
-from utils.scraper import scrape_jd_from_url
-from utils.logger import get_logger
-from services.llm_client import call_llm_structured
-from prompts.jd_extract import JD_EXTRACT_PROMPT
-from schemas.job import JDInput, JDExtracted
+from backend.utils.redis_cache import get_cache, set_cache
+from backend.utils.scraper import scrape_jd_from_url
+from backend.utils.logger import get_logger
+from backend.services.llm_client import call_llm_structured
+from backend.prompts.jd_extract import JD_EXTRACT_PROMPT
+from backend.schemas.job import JDInput, JDExtracted
 
 logger = get_logger(__name__)
 

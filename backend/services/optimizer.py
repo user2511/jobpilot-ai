@@ -2,12 +2,12 @@
 # Rewrites resume bullets to better match the target JD.
 # Never invents experience — only improves existing content.
 
-from utils.logger import get_logger
-from services.llm_client import call_llm_structured
-from prompts.optimizer import BULLET_REWRITE_PROMPT
-from schemas.resume import ResumeMetadata
-from schemas.job import JDExtracted
-from schemas.outputs import OptimizedBullets
+from backend.utils.logger import get_logger
+from backend.services.llm_client import call_llm_structured
+from backend.prompts.optimizer import BULLET_REWRITE_PROMPT
+from backend.schemas.resume import ResumeMetadata
+from backend.schemas.job import JDExtracted
+from backend.schemas.outputs import OptimizedBullets
 
 logger = get_logger(__name__)
 

@@ -5,11 +5,11 @@ from fastapi import APIRouter, UploadFile, File, HTTPException, Depends
 from sqlalchemy.orm import Session
 
 from backend.database import get_db
-from services.resume_parser import parse_resume
-from models.db_models import ResumeSession
-from schemas.resume import ResumeUploadResponse, ResumeMetadata
-from utils.logger import get_logger
-from config import settings
+from backend.services.resume_parser import parse_resume
+from backend.models.db_models import ResumeSession
+from backend.schemas.resume import ResumeUploadResponse, ResumeMetadata
+from backend.utils.logger import get_logger
+from backend.config import settings
 
 logger = get_logger(__name__)
 router = APIRouter()

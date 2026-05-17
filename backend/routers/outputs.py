@@ -6,8 +6,8 @@ from fastapi.responses import PlainTextResponse
 from sqlalchemy.orm import Session
 
 from backend.database import get_db
-from models.db_models import JobAnalysis
-from utils.logger import get_logger
+from backend.models.db_models import JobAnalysis
+from backend.utils.logger import get_logger
 
 logger = get_logger(__name__)
 router = APIRouter()
