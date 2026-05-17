@@ -4,7 +4,7 @@ import json
 from fastapi import APIRouter, HTTPException, Depends
 from sqlalchemy.orm import Session
 
-from database import get_db
+from backend.database import get_db
 from schemas.job import JDInput
 from schemas.outputs import AnalysisResponse, FullOutput
 from schemas.resume import ResumeMetadata, ExperienceItem, EducationItem

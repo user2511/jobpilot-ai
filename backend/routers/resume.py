@@ -4,7 +4,7 @@ import json
 from fastapi import APIRouter, UploadFile, File, HTTPException, Depends
 from sqlalchemy.orm import Session
 
-from database import get_db
+from backend.database import get_db
 from services.resume_parser import parse_resume
 from models.db_models import ResumeSession
 from schemas.resume import ResumeUploadResponse, ResumeMetadata

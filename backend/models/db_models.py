@@ -3,7 +3,7 @@
 
 import datetime
 from sqlalchemy import Column, String, Text, Integer, DateTime
-from database import Base
+from backend.database import Base
 
 
 class ResumeSession(Base):

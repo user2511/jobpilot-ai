@@ -5,7 +5,7 @@ from fastapi import APIRouter, HTTPException, Depends
 from fastapi.responses import PlainTextResponse
 from sqlalchemy.orm import Session
 
-from database import get_db
+from backend.database import get_db
 from models.db_models import JobAnalysis
 from utils.logger import get_logger
 

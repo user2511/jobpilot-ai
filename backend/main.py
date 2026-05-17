@@ -5,7 +5,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from contextlib import asynccontextmanager
 
-from database import engine, Base
+from backend.database import engine, Base
 from routers import resume, jobs, outputs
 from utils.logger import get_logger
 from utils.redis_cache import check_redis_health
